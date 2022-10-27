@@ -28,9 +28,7 @@ a {
     outline: none;
 }
 
-a:link,
-a:visited,
-a:hover {}
+
 
 a:active {
     background: red;
@@ -75,6 +73,13 @@ a:active {
     padding: 1px 2px;
     border-radius: 15px;
     background-color: #fdfffc;
+
+}
+
+.nav__item:hover {
+    background-color: #db222a;
+    transform: scale(1.2);
+    transition-duration: 1s;
 }
 
 @media (min-width: 1200px) {
@@ -98,10 +103,27 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: anomacion-portada;
+    animation-duration: 1s, 3s;
+}
+
+@keyframes anomacion-portada {
+    0% {
+        transform: translateZ(-800px) rotateY(90deg);
+        opacity: 0;
+    }
+
+    54% {
+        transform: translateZ(-160px) rotateY(87deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateZ(0) rotateY(0);
+    }
 }
 
 /* INFORMACION */
@@ -164,7 +186,8 @@ a:active {
 }
 
 .noticia__item {
-    background-color: #fdfffc;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(169deg, rgba(255, 255, 255, 1) 30%, rgba(244, 0, 0, 1) 88%);
     width: 300px;
     height: 350px;
     border: 3px inset red;
@@ -173,8 +196,14 @@ a:active {
     border-radius: 25px;
 }
 
+.noticia__item:hover {
+    transform: scale(1.1, 1.2);
+    transition-duration: 1.5s;
+}
+
 .noticia__img {
     width: 100%;
+    border: 5px outset #031926;
 }
 
 @media (min-width: 1200px) {
@@ -189,6 +218,7 @@ a:active {
         width: auto;
         height: auto;
     }
+
 
     .noticia__img {
         width: 100%;
@@ -216,32 +246,33 @@ a:active {
     }
 }
 
-.footer{
+.footer {
     background-color: #ff1e00;
     display: flex;
     flex-direction: column;
     align-items: center;
     bottom: 0;
 }
-.footer-titu{
+
+.footer-titu {
     font-family: 'Formula', sans-serif;
     font-size: 1.5rem;
 }
 
-.seccion__contacto{
+.seccion__contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer__contacto{
+.footer__contacto {
     border: solid black;
     padding: 1px 2px;
     border-radius: 15px;
     background-color: #fdfffc;
 }
 
-.footer-redes a{
+.footer-redes a {
     font-size: 2.5;
 }
 
@@ -250,7 +281,7 @@ a:active {
 
 .portada__escuderias {
     height: 50vh;
-    background-image: url(../img/portada2.jpg);
+    background-image: url(../img/portada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -258,6 +289,22 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: animacion-portada-escu;
+    animation-duration: 1s, 3s;
+}
+
+@keyframes animacion-portada-escu {
+    0% {
+        transform: rotateX(-100deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+    }
 }
 
 .escuderia__titu--principal {
@@ -283,7 +330,8 @@ a:active {
 }
 
 .escuderia__item {
-    background-color: #fdfffc;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(124deg, rgba(255, 255, 255, 1) 46%, rgba(244, 0, 0, 1) 85%);
     width: 800px;
     height: 500px;
     border: 3px inset red;
@@ -291,25 +339,32 @@ a:active {
     padding: 0.5rem;
     border-radius: 25px;
 }
-
-.escuderia__logo{
-    width: 45%;
+.escuderia__item:hover {
+    transform: scale(1.1, 1.2);
+    transition-duration: 1.5s;
 }
-.escuderia__auto{
+
+.escuderia__logo {
+    width: 45%;
+    border: 5px outset #031926;
+}
+
+.escuderia__auto {
     width: 50%;
+    border: 5px outset #031926;
 }
 
 @media (min-width: 1200px) {
-    .escuderia__box{
+    .escuderia__box {
         height: 200vh;
         display: grid;
         overflow: auto;
 
-        grid-template-columns: 45% 45% ;
+        grid-template-columns: 45% 45%;
         grid-template-rows: 30% 30% 30% 30% 30%
-        
     }
-    .escuderia__item{
+
+    .escuderia__item {
         width: auto;
         height: auto;
     }
