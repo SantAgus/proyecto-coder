@@ -547,7 +547,7 @@ a:active {
 
 @media (min-width: 1200px) {
     .pilotos__box {
-        height: 140vh;
+        height: 145vh;
         display: grid;
         overflow: auto;
         margin: 5rem;
