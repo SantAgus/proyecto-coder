@@ -36,7 +36,7 @@ a:active {
 
 .body {
     height: auto;
-    background-image: url(../img/logo1.jpg);
+    background-color: #15151d;
     background-size: contain;
 }
 
@@ -71,7 +71,7 @@ a:active {
 .nav__item {
     border: solid black;
     padding: 1px 2px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #fdfffc;
 
 }
@@ -339,6 +339,7 @@ a:active {
     padding: 0.5rem;
     border-radius: 25px;
 }
+
 .escuderia__item:hover {
     transform: scale(1.1, 1.2);
     transition-duration: 1.5s;
@@ -372,62 +373,142 @@ a:active {
 
 /* PAGE TABLA POSICIONES */
 
-
-
 .portada__tabla {
-    height: 65vh;
-    font-size: 2rem;
-    background-image: url(../img/portada-posicion2.jpg);
+    height: 50vh;
+    background-image: url(../img/portada-ferrari.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animacion-portada-tabla;
+    animation-duration: 1s, 3s;
 }
 
-.tabla__pos {
-    margin: 150px auto;
-    width: 600px;
+@keyframes animacion-portada-tabla {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes animacion-portada-tabla {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 .tabla__titu--principal {
     font-size: 2.5rem;
     text-align: center;
+    font-family: 'Formula', sans-serif;
     text-decoration: underline;
     color: #ff1e00
 }
 
 .tabla__titu--secundario {
+    font-size: 2rem;
     text-align: center;
-    font-size: 2rem;
-    padding-top: 10rem;
-    color: #ff1e00
+    font-family: 'Formula', sans-serif;
+    text-decoration: underline;
+    color: #ff1e00;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
-.tabla {
-    margin: 150px auto;
-    width: 600px;
-    font-size: 2rem;
+/* TABLA DESKTOP */
+
+.tabla__desktop {
+    width: 100%;
+    border-collapse: collapse;
     background-color: #fdfffc;
-    text-align: left;
+    padding-bottom: 1rem;
 }
 
-th,
-td {
-    padding: 20px;
-}
-
-.encabezado {
+.tabla__desktop tr th {
     background-color: #ff1e00;
+    border: 3px solid black;
+    padding: 15px;
+    text-align: center;
 }
 
-tr:nth-child(even) {
-    background-color: #ddd;
+.tabla__desktop tr td {
+    border: 3px solid black;
+    padding: 15px;
 }
+
+/* TABLA MOBILE */
+
+.tabla__mobile {
+    display: none;
+    width: 100%;
+    background-color: #fdfffc;
+    padding-bottom: 1rem;
+}
+
+.tabla__mobile .fila .columna {
+    display: flex;
+}
+
+.tabla__mobile .fila .columna .encabezado,
+.tabla__mobile .fila .columna .contenido {
+    border: 3px solid black;
+    border-bottom: none;
+    padding: 10px;
+}
+
+.tabla__mobile .fila .columna .encabezado {
+    width: 40%;
+    background-color: #ff1e00;
+    font-weight: bold;
+
+}
+
+.tabla__mobile .fila .columna .contenido {
+    width: 60%;
+}
+
+.tabla__mobile .fila:nth-of-type(even) .columna .contenido {
+    background-color: #8d99ae;
+}
+
+.tabla__mobile .fila .columna:last-of-type .contenido,
+.tabla__mobile .fila .columna:last-of-type .encabezado {
+    border-bottom: 3px solid black;
+}
+
+
+@media (max-width: 768px) {
+    .tabla__mobile {
+        display: block;
+    }
+
+    .tabla__desktop {
+        display: none;
+    }
+}
+
+
 
 /* Seccion pilotos */
 
 .portada__pilotos {
     height: 55vh;
     font-size: 2rem;
-    background-image: url(../img/portada-pilotos.jpg);
+    background-image: url(../img/portada-mercedes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -436,32 +517,49 @@ tr:nth-child(even) {
     font-size: 2.5rem;
     text-align: center;
     text-decoration: underline;
-    color: #ff1e00
+    color: #ff1e00;
+    font-family: 'Formula', sans-serif;
 }
 
 .pilot {
     padding: 1rem;
-
 }
 
 .pilotos__box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 100px;
+    justify-content: center;
+    gap: 55px;
+    margin: 1rem;
+
 }
 
 .pilotos__item {
-    background-color: #6c757d;
-    width: 280px;
-    height: 400px;
-    border: 5px solid red;
-    padding: 5px 4px 5px 0px;
-    overflow: hidden;
-    margin: 15px;
-    color: #fdfffc;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(169deg, rgba(255, 255, 255, 1) 30%, rgba(244, 0, 0, 1) 88%);
+    width: 300px;
+    height: 380px;
+    border: 3px inset red;
+    box-shadow: 0px 2px 8px white;
+    padding: 0.5rem;
+    border-radius: 25px;
 }
 
+@media (min-width: 1200px) {
+    .pilotos__box {
+        height: 140vh;
+        display: grid;
+        overflow: auto;
+        margin: 5rem;
+        grid-template-columns: 25% 25%;
+        grid-template-rows: 30% 30% 30% 30% 30%
+    }
+
+    .pilotos__item {
+        width: auto;
+        height: auto;
+    }
+}
 
 /* Seccion contacto */
 .contacto__titu--principal {
