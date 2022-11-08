@@ -357,7 +357,7 @@ a:active {
 
 @media (min-width: 1200px) {
     .escuderia__box {
-        height: 200vh;
+        height: 180vh;
         display: grid;
         overflow: auto;
 
@@ -511,6 +511,40 @@ a:active {
     background-image: url(../img/portada-mercedes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: animacion-portada-pilotos;
+    animation-duration: 1s, 3s;
+}
+
+@-webkit-keyframes animacion-portada-pilotos {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+}
+
+@keyframes animacion-portada-pilotos {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+    }
 }
 
 .pilotos__titu--principal {
@@ -563,15 +597,15 @@ a:active {
 
 /* Seccion contacto */
 .contacto__titu--principal {
+    font-family: 'Formula', sans-serif;
     font-size: 2.5rem;
     text-align: center;
     text-decoration: underline;
-    color: #ff1e00
+    color: #ff1e00;
 }
 
 .cont {
     padding: 1rem;
-
 }
 
 .contacto__descrip {
@@ -589,12 +623,12 @@ form {
     padding: 1rem;
     border: 1px solid #CCC;
     border-radius: 1rem;
+    text-align: right;
 }
 
 label {
     display: inline-block;
     width: 200px;
-    text-align: right;
     padding: 1rem;
     color: #ff1e00;
 }
@@ -609,4 +643,13 @@ textarea {
 
 .enviar-info {
     padding-left: 90px;
+}
+
+@media (max-width: 830px) {
+    form{
+        width:100%
+    }
+    .contacto__descrip{
+        font-size: 1.3rem;
+    }
 }
