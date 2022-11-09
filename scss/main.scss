@@ -1,0 +1,31 @@
+@import "./utils/variable";
+
+
+@import "./base/base";
+
+
+@import "./components/header";
+
+@import "./components/navbar";
+@import "./components/portada";
+@import "./base/animations";
+@import "./components/footer";
+
+@import "./pages/index";
+@import "./components/noticia";
+
+@import "./pages/escuderia";
+@import "./components/escuderiabox";
+
+@import "./pages/tabla";
+@import "./components/tablapos";
+
+@import "./pages/pilotos";
+@import "./components/pilotobox";
+
+@import "./pages/contacto";
+@import "./components/formulario";
+
+
+
+@import "./components/media";

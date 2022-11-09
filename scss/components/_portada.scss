@@ -1,0 +1,52 @@
+.portada {
+    height: 50vh;
+    background-image: url(../img/portada2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: anomacion-portada;
+    animation-duration: 1s, 3s;
+}
+
+
+.portada__escuderias {
+    height: 50vh;
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animacion-portada-escu;
+    animation-duration: 1s, 3s;
+}
+
+.portada__tabla {
+    height: 50vh;
+    background-image: url(../img/portada-ferrari.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animacion-portada-tabla;
+    animation-duration: 1s, 3s;
+}
+
+
+.portada__pilotos {
+    height: 55vh;
+    font-size: 2rem;
+    background-image: url(../img/portada-mercedes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: animacion-portada-pilotos;
+    animation-duration: 1s, 3s;
+}

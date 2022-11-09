@@ -1,0 +1,18 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.3rem;
+    padding: 2rem;
+
+    &__item {
+        border: solid black;
+        padding: 1px 2px;
+        border-radius: 10px;
+        background-color: #fdfffc;
+        &:hover{
+            background-color: #db222a;
+            transform: scale(1.2);
+            transition-duration: 1s;
+        }
+    }
+}

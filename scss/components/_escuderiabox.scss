@@ -1,0 +1,35 @@
+.escuderia__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 55px;
+    margin: 1rem;
+    justify-content: center;
+
+    &__item {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(124deg, rgba(255, 255, 255, 1) 46%, rgba(244, 0, 0, 1) 85%);
+        width: 800px;
+        height: 500px;
+        border: 3px inset red;
+        box-shadow: 0px 2px 8px white;
+        padding: 0.5rem;
+        border-radius: 25px;
+
+        &:hover {
+            transform: scale(1.1, 1.2);
+            transition-duration: 1.5s;
+        }
+    }
+
+    &__logo {
+        width: 45%;
+        border: 5px outset #031926;
+    }
+
+    &__auto{
+        width: 50%;
+    border: 5px outset #031926;
+    }
+}
+

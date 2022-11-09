@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+@font-face {
+    font-family: "Formula";
+    src: url(../assets/formula1.ttf);
+}
+
+/* 
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Work Sans', sans-serif;
+*/
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #15151e;
+    outline: none;
+}
+
+a:active {
+    background: red;
+}
+
+.body {
+    height: auto;
+    background-color: #15151d;
+    background-size: contain;
+}

@@ -1,0 +1,17 @@
+.pilotos__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 55px;
+    margin: 1rem;
+    &__item{
+        background: rgb(255, 255, 255);
+    background: linear-gradient(169deg, rgba(255, 255, 255, 1) 30%, rgba(244, 0, 0, 1) 88%);
+    width: 300px;
+    height: 380px;
+    border: 3px inset red;
+    box-shadow: 0px 2px 8px white;
+    padding: 0.5rem;
+    border-radius: 25px;
+    }
+}
