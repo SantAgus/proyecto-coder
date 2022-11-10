@@ -5,7 +5,7 @@
     padding-bottom: 1rem;
 
     & tr th {
-        background-color: #ff1e00;
+        background-color: $color-f1;
         border: 3px solid black;
         padding: 15px;
         text-align: center;
@@ -36,7 +36,7 @@
 
     & .fila .columna .encabezado {
         width: 40%;
-        background-color: #ff1e00;
+        background-color: $color-f1;
         font-weight: bold;
     }
 

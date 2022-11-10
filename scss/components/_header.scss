@@ -1,5 +1,5 @@
 .header {
-    background-color: #ff1e00;
+    background-color: $color-f1;
     padding: 1rem;
 }
 
@@ -13,7 +13,7 @@
     &__titulo{
         font-size: 1.5rem;
     color: #15151e;
-    font-family: 'Formula', sans-serif;
+    font-family: $fuente-f1;
     }
 }
 

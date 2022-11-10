@@ -2,8 +2,10 @@
     padding: 1rem;
     &__titu--principal{
         font-size: 2.5rem;
+        font-family: $fuente-f1;
     text-decoration: underline;
-    color: #ff1e00
+    color: $color-f1;
+    
     }
     &__box{
         display: flex;
