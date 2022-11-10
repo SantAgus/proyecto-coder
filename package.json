@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "description": "Buenas tutor corrector! Aca esta mi proyecto para CODER.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantAgus/proyecto-coder.git"
+  },
+  "author": "Agustin Santander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantAgus/proyecto-coder/issues"
+  },
+  "homepage": "https://github.com/SantAgus/proyecto-coder#readme"
+} 
