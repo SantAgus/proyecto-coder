@@ -20,11 +20,15 @@
 .tabla__mobile {
     display: none;
     width: 100%;
-    background-color: #fdfffc;
+    background-color:#15151d ;
     padding-bottom: 1rem;
 
     & .fila .columna {
         display: flex;
+    }
+
+    & .columna{
+        background-color:  #fdfffc;
     }
 
     & .fila .columna .encabezado,

@@ -364,11 +364,14 @@ a:active {
 .tabla__mobile {
   display: none;
   width: 100%;
-  background-color: #fdfffc;
+  background-color: #15151d;
   padding-bottom: 1rem;
 }
 .tabla__mobile .fila .columna {
   display: flex;
+}
+.tabla__mobile .columna {
+  background-color: #fdfffc;
 }
 .tabla__mobile .fila .columna .encabezado, .tabla__mobile .fila .columna .contenido {
   border: 3px solid black;
@@ -420,6 +423,11 @@ a:active {
   border-radius: 25px;
 }
 
+.pilotos__logo {
+  width: 140px;
+  height: 160px;
+}
+
 .contacto__titu--principal {
   font-family: "Formula", sans-serif;
   font-size: 2.5rem;
@@ -437,6 +445,7 @@ a:active {
   text-align: center;
   color: #fdfffc;
   padding: 5rem;
+  padding-bottom: 5rem;
 }
 
 form {
